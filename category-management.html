@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Management</title>
+    <link rel="stylesheet" href="category-management.css">
+</head>
+<body>
+
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <a href="#" class="sign-in">Hi! <span>Sign in</span> or <span>register</span></a>
+            <div class="nav-items">
+                <a href="#">Daily Deals</a>
+                <a href="#">Help & Contact</a>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="main-header">
+            <div class="logo">
+                <h1>e<span>Shop</span></h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for anything">
+                <button>Search</button>
+            </div>
+            <div class="cart">
+                <a href="#">Cart</a>
+            </div>
+        </div>
+
+        <!-- Category Menu -->
+        <nav class="category-menu">
+            <a href="#">Explore</a>
+            <a href="#">Saved</a>
+            <a href="#">Electronics</a>
+            <a href="#">Motors</a>
+            <a href="#">Fashion</a>
+            <a href="#">Collectibles & Art</a>
+            <a href="#">Sports</a>
+            <a href="#">Health & Beauty</a>
+            <a href="#">Home & Garden</a>
+            <a href="#">Deals</a>
+            <a href="#">Sell</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Category Management</h2>
+        
+        <!-- Add Category Button -->
+        <button id="add-category-btn">Add Category</button>
+        
+        <!-- Category List Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Category Name</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="category-list">
+                <tr>
+                    <td>1</td>
+                    <td>Electronics</td>
+                    <td>All kinds of electronic gadgets</td>
+                    <td>
+                        <button class="update-btn">Update</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Fashion</td>
+                    <td>Clothes, shoes, and accessories</td>
+                    <td>
+                        <button class="update-btn">Update</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </main>
+
+    <!-- Popup for Add/Update Category -->
+    <div id="category-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="popup-title">Add New Category</h3>
+            <form id="category-form">
+                <label for="category-name">Category Name</label>
+                <input type="text" id="category-name" required>
+
+                <label for="category-description">Description</label>
+                <textarea id="category-description" required></textarea>
+
+                <button type="submit" id="save-category-btn">Save Category</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 eShop. All rights reserved.</p>
+    </footer>
+
+    <script src="category-management.js"></script>
+</body>
+</html>
+<script>
+    // category-management.js
+document.getElementById('add-category-btn').addEventListener('click', function() {
+    document.getElementById('category-popup').style.display = 'flex';
+    document.getElementById('popup-title').innerText = 'Add New Category';
+});
+
+document.querySelector('.close-btn').addEventListener('click', function() {
+    document.getElementById('category-popup').style.display = 'none';
+});
+
+document.getElementById('category-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Logic to handle saving the category (fake it for now)
+    alert('Category saved!');
+    document.getElementById('category-popup').style.display = 'none';
+});
+
+</script>

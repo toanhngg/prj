@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - eShop</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <a href="#" class="sign-in">Hi! <span>Sign in</span> or <span>register</span></a>
+            <div class="nav-items">
+                <a href="#">Daily Deals</a>
+                <a href="#">Help & Contact</a>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="main-header">
+            <div class="logo">
+                <h1>e<span>Shop</span></h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for anything">
+                <button>Search</button>
+            </div>
+            <!-- <div class="categories">
+                <button>All Categories</button>
+            </div> -->
+            <div class="cart">
+                <a href="#">Cart</a>
+            </div>
+        </div>
+
+        <!-- Category Menu -->
+        <nav class="category-menu">
+            <a href="#">Explore</a>
+            <a href="#">Saved</a>
+            <a href="#">Electronics</a>
+            <a href="#">Motors</a>
+            <a href="#">Fashion</a>
+            <a href="#">Collectibles & Art</a>
+            <a href="#">Sports</a>
+            <a href="#">Health & Beauty</a>
+            <a href="#">Home & Garden</a>
+            <a href="#">Deals</a>
+            <a href="#">Sell</a>
+        </nav>
+    </header>
+    <div class="login-container">
+        <h2>Login to eShop</h2>
+        
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">Username or Email:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+
+            <div class="additional-options">
+                <p><a href="#">Forgot password?</a></p>
+                <p>Don't have an account? <a href="#">Sign up</a></p>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 eShop. All rights reserved.</p>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>

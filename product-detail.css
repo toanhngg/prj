@@ -1,0 +1,282 @@
+
+/* Product detail styles */
+.product-detail-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 40px;
+    margin: 20px 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-images {
+    flex: 1;
+    text-align: center;
+}
+
+#main-img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.image-thumbnails img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 24px;
+    color: #333;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 10px;
+}
+
+.discount {
+    color: red;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.shipping-info {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.add-to-cart {
+    margin-top: 30px;
+}
+
+.add-to-cart button {
+    padding: 10px 20px;
+    background-color: #0064d2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.add-to-cart button#buy-now-btn {
+    background-color: #ff9900;
+}
+
+.seller-info {
+    margin-top: 20px;
+}
+
+.seller-info strong {
+    font-weight: bold;
+}
+
+/* Product description */
+.product-description {
+    margin: 40px 50px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-description h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+/* Basic resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Top Bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.sign-in span {
+    text-decoration: underline;
+}
+
+/* Main Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.logo h1 span {
+    color: #0073e6;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.categories button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0073e6;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Category Menu */
+.category-menu {
+    background-color: #f4f4f4;
+    padding: 10px 40px;
+}
+
+.category-menu a {
+    margin-right: 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+/* Style for the categories bar */
+.category-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.category-item {
+    text-align: center;
+    width: 100px;
+}
+
+.category-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.category-item p {
+    font-size: 14px;
+    color: #333;
+    margin-top: 0;
+}
+
+.category-item:hover p {
+    font-weight: bold;
+    text-decoration: underline;
+}
+/* Review Section */
+.review-section {
+    padding: 40px 50px;
+    background-color: white;
+    margin: 20px 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-section h3 {
+    margin-bottom: 20px;
+}
+
+.review-input textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.review-input label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.rating {
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}

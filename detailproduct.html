@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - eBay Style</title>
+    <link rel="stylesheet" href="product-detail.css">
+</head>
+<body>
+
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <a href="#" class="sign-in">Hi! <span>Sign in</span> or <span>register</span></a>
+            <div class="nav-items">
+                <a href="#">Daily Deals</a>
+                <a href="#">Help & Contact</a>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="main-header">
+            <div class="logo">
+                <h1>e<span>Shop</span></h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for anything">
+                <button>Search</button>
+            </div>
+            <div class="cart">
+                <a href="#">Cart</a>
+            </div>
+        </div>
+
+        <!-- Category Menu -->
+        <nav class="category-menu">
+            <a href="#">Explore</a>
+            <a href="#">Saved</a>
+            <a href="#">Electronics</a>
+            <a href="#">Motors</a>
+            <a href="#">Fashion</a>
+            <a href="#">Collectibles & Art</a>
+            <a href="#">Sports</a>
+            <a href="#">Health & Beauty</a>
+            <a href="#">Home & Garden</a>
+            <a href="#">Deals</a>
+            <a href="#">Sell</a>
+        </nav>
+    </header>
+
+    <div class="product-detail-container">
+        <div class="product-images">
+            <img id="main-img" src="https://via.placeholder.com/400x400" alt="Main Product Image">
+            <div class="image-thumbnails">
+                <img class="thumbnail" src="https://via.placeholder.com/100x100" alt="Thumbnail 1">
+                <img class="thumbnail" src="https://via.placeholder.com/100x100" alt="Thumbnail 2">
+                <img class="thumbnail" src="https://via.placeholder.com/100x100" alt="Thumbnail 3">
+                <img class="thumbnail" src="https://via.placeholder.com/100x100" alt="Thumbnail 4">
+            </div>
+        </div>
+
+        <div class="product-info">
+            <h2>Product Name</h2>
+            <p>Brand New</p>
+            <div class="product-price">
+                <span>$149.99</span>
+                <span class="old-price">$199.99</span>
+                <span class="discount">25% OFF</span>
+            </div>
+            <div class="shipping-info">
+                <p>Free shipping</p>
+                <p>Estimated delivery: <strong>3-5 business days</strong></p>
+            </div>
+
+            <div class="add-to-cart">
+                <button id="add-to-cart-btn">Add to Cart</button>
+                <button id="buy-now-btn">Buy Now</button>
+            </div>
+
+            <div class="seller-info">
+                <p>Sold by <strong>Top Rated Seller</strong></p>
+                <p>99.8% Positive Feedback</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-description">
+        <h3>Product Description</h3>
+        <p>This is a detailed description of the product. It contains all the specifications and details about the product, its features, and why you should consider purchasing it.</p>
+    </div>
+
+    <!-- Review Section -->
+    <div class="review-section">
+        <h3>Write a Review</h3>
+        <form id="review-form">
+            <div class="rating">
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating">
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="2">2 Stars</option>
+                    <option value="1">1 Star</option>
+                </select>
+            </div>
+            <div class="review-input">
+                <label for="review-text">Your Review:</label>
+                <textarea id="review-text" name="review-text" rows="5" placeholder="Write your review here..."></textarea>
+            </div>
+            <button type="submit">Submit Review</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 eShop. All rights reserved.</p>
+    </footer>
+
+    <script src="product-detail.js"></script>
+</body>
+</html>
